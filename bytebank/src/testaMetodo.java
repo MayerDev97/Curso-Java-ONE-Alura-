@@ -12,5 +12,15 @@ public class testaMetodo {
 		System.out.println(contaJonatham.saldo);
 		System.out.println(conseguiuRetirar);
 		
+		Conta contaMarcela = new Conta();
+		contaMarcela.deposita(1000);
+		
+		if(contaMarcela.transfere(3000, contaJonatham)) {
+			System.out.println("Transferência realizada com sucesso!");
+		} else {
+			System.out.println("Saldo insuficiente!");
+		}
+		System.out.println(contaJonatham.saldo);
+		System.out.println(contaMarcela.saldo);
 	}
 }
