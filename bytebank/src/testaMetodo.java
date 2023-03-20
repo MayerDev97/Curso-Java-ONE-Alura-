@@ -22,5 +22,8 @@ public class testaMetodo {
 		}
 		System.out.println(contaJonatham.saldo);
 		System.out.println(contaMarcela.saldo);
+		
+		contaJonatham.titular = "Jonatham Mayer";
+		System.out.println(contaJonatham.titular);
 	}
 }
